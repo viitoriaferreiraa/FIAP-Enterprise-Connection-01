@@ -1,0 +1,255 @@
+:root {
+  --white: #ffffff;
+  --red: #b31818;
+  --blue: #000068;
+  --blue-light: #0351e2;
+  --black: #000000;
+}
+
+/* homepage */
+.container-home {
+  background-image: linear-gradient(to left, #471414, #77170c, #b31818);
+  background-size: 500% 300%;
+  animation: animation-degrade 5s infinite alternate;
+}
+
+@keyframes animation-degrade {
+  0% {
+    background-position-x: 0%;
+  }
+  100% {
+    background-position-x: 100%;
+  }
+}
+
+@font-face {
+  font-family: "Far-From";
+  src: url("../assets/fonts/Far-From Homecoming Updated.otf");
+}
+
+.section-intro {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-intro-title {
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #000;
+  color: var(--white);
+  font-family: "Far-From";
+  font-size: 70px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.section-intro-paragraph {
+  font-family: "Far-From";
+  font-size: 30px;
+  color: var(--white);
+  width: 500px;
+  text-align: center;
+  margin: 30px auto;
+  letter-spacing: 3px;
+  line-height: 40px;
+}
+
+.section-intro-img {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 95%;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+}
+
+.section-intro-btn {
+  padding: 15px 20px;
+  font-family: "Far-From";
+  font-size: 28px;
+  font-weight: bold;
+  float: right;
+  border-radius: 5px;
+  border: none;
+  margin: 0px 30px;
+  cursor: pointer;
+  transition: transform 100ms linear;
+}
+
+.section-intro-btn:hover {
+  transform: scale(1.1);
+}
+
+.section-intro-link {
+  text-decoration: none;
+  color: var(--red);
+}
+
+/* page places */
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 15px;
+  border-bottom: 2px;
+  box-shadow: 0 3px 10px #00000033;
+  background-color: var(--white);
+}
+
+.nav-img {
+  width: 70%;
+  cursor: pointer;
+}
+
+.nav-link {
+  display: flex;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-item-link {
+  font-size: 23px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+  margin: 20px 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: var(--red);
+  transition: transform 200ms linear;
+}
+
+.nav-item-link:hover {
+  transform: scale(1.1);
+  background-color: var(--red);
+  color: var(--white);
+}
+
+.container-banner {
+  height: 100%;
+  margin-top: 92px;
+}
+
+.container-banner-img {
+  width: 100%;
+  height: 535px;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--red);
+  height: 100px;
+  line-height: 100px;
+}
+
+.container-card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.item-card {
+  margin: 10px 15px;
+  box-shadow: 0 3px 10px #00000085;
+  border-radius: 5px;
+  width: 30%;
+  height: 400;
+}
+
+.item-img-card {
+  width: 100%;
+}
+
+.item-subtitle-card {
+  background-color: yellow;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+  width: 40%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.description-place-icon {
+  display: flex;
+  align-items: center;
+  margin: 5px 15px;
+}
+
+.item-paragraph-card {
+  line-height: 25px;
+  font-size: 18px;
+  padding: 10px;
+  text-align: start;
+}
+
+.icon {
+  margin: 5px;
+  font-size: 25px;
+  color: var(--blue-light);
+}
+
+.item-link-card {
+  text-decoration: none;
+  padding: 10px;
+  color: var(--black);
+}
+
+.item-iframe-card {
+  padding: 10px;
+  width: 305px;
+  height: 100px;
+}
+
+.trailer-paragraph {
+  width: 600px;
+  text-align: center;
+  font-size: 18px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.trailer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  background-color: var(--red);
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.footer-paragraph {
+  text-align: center;
+  color: var(--white);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.footer-paragraph:nth-last-child(1) {
+  padding-top: 10px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.footer-icon {
+  font-size: 14px;
+  color: var(--white);
+}
